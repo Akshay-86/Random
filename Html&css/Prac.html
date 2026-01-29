@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+<title>jQuery Effects</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <style>
+	   div{
+		border:1px solid #000;
+		padding:5px;
+		background-color:green;
+	   }
+   </style>
+   <script>
+   
+   
+  $(function() {
+    $("#hide").click(function(){
+		$("#p1").hide(1000);
+	});
+
+	$("#show").click(function(){
+	  $("#p1").show(1000);
+	});
+	$("#toggle").click(function(){
+	  $("#p1").toggle(1000);
+	});
+	
+	$("#fadeout").click(function(){
+ 		$("#p2").fadeOut();		
+ 	});
+	
+	$("#fadein").click(function(){
+ 		$("#p2").fadeIn(1000);		
+ 	});
+	$("#fadetol").click(function(){
+ 		$("#p2").fadeTo("slow",0.2);		
+ 	});	
+	$("#fadetoh").click(function(){
+ 		$("#p2").fadeTo("slow",1);		
+ 	});
+	
+	
+	$("#slidedown").click(function(){
+ 		$("#p3").slideDown();		
+ 	});
+	
+	$("#slideup").click(function(){
+ 		$("#p3").slideUp();		
+ 	});
+	
+	$("#slidetoggle").click(function(){
+ 		$("#p3").slideToggle(500);		
+ 	});
+	
+	
+  } );
+  </script>
+</head>
+<body>
+ 
+<br/><div id="p1">Demonstration of jQuery Effects - Hide, Show></div>
+ 
+ <button id="hide">Hide</button>
+ <button id="show">Show</button>
+ <button id="toggle">Toggle</button>
+ 
+ <br/><br/><div id="p2" style="">Demonstration of jQuery Effects - Fade</div>
+ <button id="fadeout">Fade Out</button>
+ <button id="fadein">Fade In</button>
+ <button id="fadetol">Fade to 0.2</button>
+ <button id="fadetoh">Fade to 1.0</button>
+ 
+<br/><br/><div id="p3">Demonstration of jQuery Effects - Toogle</div>
+ <button id="slideup">Slide Up</button>
+ <button id="slidedown">Slide Down</button>
+ <button id="slidetoggle">Slide Toggle</button>
+
+</body>
+</html>

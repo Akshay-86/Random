@@ -1,0 +1,246 @@
+/*
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*/
+
+input{
+  margin-bottom: 10px;
+  vertical-align: -3;
+}
+
+input[type="text"],[type="password"]{
+  border: none;
+  border-bottom:1px solid lightblue;
+  background-color: transparent;
+  caret-color: lightblue;
+  outline: none;
+  color: lightblue;
+  
+}
+
+.butt{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.conpass{
+  margin-left: 2px;
+  vertical-align: top;
+}
+
+.pass{
+  margin-left: 67px;
+  vertical-align: top;
+}
+
+.email{
+  margin-left: 92px;
+  vertical-align: top;
+}
+
+.name{
+  margin-left: 62px;
+  vertical-align: top;
+}
+
+.para{
+  display: inline-block;
+  vertical-align: top;
+  margin: -2px 0px 10px 0px;
+}
+
+.par{
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 0px 10px 0px;
+}
+
+.area{
+  margin-top: 10px;
+  margin-left: 38px;
+  margin-bottom: 10px;
+  border: 1px solid lightblue;
+  background-color: transparent;
+  outline: none;
+  color: lightblue;
+  resize: none;
+}
+
+.cor{
+  margin-bottom: 10px;
+}
+
+.sel{
+  margin-left: 39px;
+  width: 176px;
+  border-color: darkgray;
+  border-radius: 2px;
+}
+
+.bd{
+  background-image: url("image3.jpg");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+.for{
+  position: relative;
+  z-index: 1;
+}
+
+fieldset{
+  color: #6bfff3;
+  border: solid darkgray;
+  font-weight: bold;
+}
+
+.but{
+  border:3px solid darkgray;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 3px 4px;
+  color: orange;
+  margin-right: 2px;
+  font-weight: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+}
+
+.gen{
+  margin-left: 37px;
+}
+
+.sel{
+  background-color: transparent;
+  border: 1px solid lightblue;
+  outline: none;
+  color: lightblue;
+}
+
+h3{
+  color: orange;
+}
+
+/* General Styles for Inputs */
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none; /* Remove default appearance */
+  opacity: 0; /* Make them invisible */
+  position: absolute; /* Remove visual footprint */
+}
+
+/* Styles for Checkbox 1: Java */
+.checkbox-label1 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightblue; /* Orange border */
+  border-radius: 2px;
+  position: relative;
+  
+}
+
+input[type="checkbox"]:checked + .checkbox-label1::before {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 7px;
+  height: 7px;
+  background: lightblue;
+}
+
+/* Styles for Checkbox 2: CSS */
+.checkbox-label2 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightblue; /* Blue border */
+  border-radius: 2px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + .checkbox-label2::before {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 7px;
+  height: 7px;
+  background: lightblue;
+}
+
+/* Styles for Checkbox 3: HTML */
+.checkbox-label3 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightblue; /* Green border */
+  border-radius: 2px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + .checkbox-label3::before {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  width: 7px;
+  height: 7px;
+  background: lightblue;
+}
+
+/* Styles for Radio Button 1: Male */
+.radio-label1 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightblue; /* Black border */
+  border-radius: 50%;
+  position: relative;
+  margin-left: 32px;
+}
+
+input[type="radio"]:checked + .radio-label1::before {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  width: 5px;
+  height: 5px;
+  background: lightblue;
+  border-radius: 50%;
+}
+
+/* Styles for Radio Button 2: Female */
+.radio-label2 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid lightblue; /* Pink border */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type="radio"]:checked + .radio-label2::before {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  width: 5px;
+  height: 5px;
+  background: lightblue;
+  border-radius: 50%;
+}

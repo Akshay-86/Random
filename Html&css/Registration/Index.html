@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+      <div class="bd"></div>
+      
+    <div class="for">
+        <h3 >Registration form</h3>
+      <form>
+          <fieldset class="usr">
+            <legend>User_info</legend>
+            Full Name:<input class="name" type="text"><br>
+            Email:<input class="email" type="text"><br>
+            Password:<input class="pass" type="password"><br>
+            Conform Password:<input class="conpass" type="password"><br>
+            <p class="para">Select Gender:</p>
+            <label>
+              <input type="radio" name="gender" id="radio1">
+              <span class="radio-label1"></span> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" id="radio2">
+              <span class="radio-label2"></span> Female
+            </label><br>
+            
+            
+            <p class="par">Enter address:</p><textarea class="area" rows="4" cols="23"></textarea><br>
+            Select district:<Select class="sel">
+              <optgroup label="Ap">
+                <option>Eluru</option>
+                <option>Waste godavari</option>
+              </optgroup>
+              <optgroup label="Ts">
+                <option>Hyderabad</option>
+                <option>Adilabad</option>
+              </optgroup>
+            </Select>
+          </fieldset>
+          
+          <fieldset class="cor">
+            <legend>Course</legend>
+            Select Course<br>
+            
+            <label>
+            <input type="checkbox" id="checkbox1">
+              <span class="checkbox-label1"></span> Java
+            </label>
+            <label>
+              <input type="checkbox" id="checkbox2">
+              <span class="checkbox-label2"></span> CSS
+            </label>
+            <label>
+              <input type="checkbox" id="checkbox3">
+              <span class="checkbox-label3"></span> HTML
+            </label>
+          </fieldset>
+        
+          <div class="butt">
+            <button class="but">Submit</button>
+            <button class="but">Close</button>
+          </div>
+      </form>
+    </div>
+  </body>
+</html>
