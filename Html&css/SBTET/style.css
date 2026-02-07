@@ -13,6 +13,7 @@
 }
 
 .head{
+  width: auto;
   position: sticky;
   top: 0px;
   z-index: 50;
@@ -120,8 +121,36 @@ marquee{
   margin: 0px 12px 0px 12px;
 }
 
+/* Responsive layout for desktop */
+@media (min-width: 768px) {
+  .body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 350px 0px 350px;
+  }
+  
+  .contanier4{
+    grid-column: 1 / 4;
+  }
+  
+  .tab{
+    overflow-x: visible;
+  }
+  
+  table{
+    width: 100%;
+  }
+  
+  th, td {
+    white-space: normal;
+    padding: 8px 4px;
+  }
+}
+
 .minicontanier{
-  padding: 18px 14px 1px 14px;
+  padding: 18px 14px 1px 14px;;
 }
 
 .heading{
@@ -140,6 +169,7 @@ marquee{
 
 .contanier{
   background-image: url('Marks/Images/shape2.jpg');
+  background-size: auto ;
   background-repeat: no-repeat;
   margin: 0px 0px 25px 0px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
@@ -159,16 +189,22 @@ marquee{
   margin: 0px 0px 10px 15px;
 }
 
+.para div span:first-child{
+  margin-right: 90px;
+}
+
 .para{
   color: #337ab7;
   margin: 0px 0px 30px 0px;
 }
 
-table{
-  display: block;
+.tab{
   overflow-x: auto;
-  border-collapse: collapse;
   margin: 25px 0px 25px 0px;
+}
+
+table{
+  border-collapse: collapse;
   border: 1px solid rgb(221,221,221);
 }
 
@@ -197,6 +233,7 @@ th{
   margin: 90px 0px 0px 0px;
   background-color: #080524;
   color: white;
+  z-index: -1;
 }
 
 .foot p:first-child{
@@ -231,4 +268,11 @@ a{
 a:focus{
   color: #22517b;
   text-decoration: underline;
+}
+
+.contanier4{
+  background-image: url('Marks/Images/shape2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
 }
