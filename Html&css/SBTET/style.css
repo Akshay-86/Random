@@ -138,6 +138,7 @@ marquee{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 0px 20px 0px 20px;
+    align-items: start;
   }
   
   .contanier4{
@@ -207,6 +208,10 @@ marquee{
 .para{
   color: #337ab7;
   margin: 0px 0px 30px 0px;
+}
+
+.contanier2 a{
+  font-weight: normal;
 }
 
 .tab{
