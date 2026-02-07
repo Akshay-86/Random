@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 @keyframes colourChange{
@@ -117,8 +119,16 @@ marquee{
   animation: colourChange 2s infinite;
 }
 
+.bodyDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
 .body{
   margin: 0px 12px 0px 12px;
+  width: 65%
 }
 
 /* Responsive layout for desktop */
@@ -128,7 +138,6 @@ marquee{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 0px 20px 0px 20px;
-    padding: 0px 350px 0px 350px;
   }
   
   .contanier4{
@@ -146,11 +155,12 @@ marquee{
   th, td {
     white-space: normal;
     padding: 8px 4px;
+    font-weight: normal;
   }
 }
 
 .minicontanier{
-  padding: 18px 14px 1px 14px;;
+  padding: 18px 14px 1px 14px;
 }
 
 .heading{
@@ -159,6 +169,7 @@ marquee{
   align-items: center;
   padding: 0px 0px 0px 20px;
   font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
   color: white;
 }
 
