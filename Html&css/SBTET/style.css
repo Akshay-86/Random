@@ -123,12 +123,12 @@ marquee{
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
 
 .body{
   margin: 0px 12px 0px 12px;
-  width: 65%
+  width: 90%
 }
 
 /* Responsive layout for desktop */
@@ -157,6 +157,18 @@ marquee{
     white-space: normal;
     padding: 8px 4px;
     font-weight: normal;
+  }
+
+  .bodyDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+
+
+  .body{
+    margin: 0px 12px 0px 12px;
+    width: 65%
   }
 }
 
